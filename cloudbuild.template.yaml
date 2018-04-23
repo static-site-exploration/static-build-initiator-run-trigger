@@ -2,5 +2,5 @@
 # will be placed in the static component repos and used for manual triggers
 
 steps:
-- name: 'gcr.io/static-cloud-builders/run-cloud-build-trigger'
-  args: ['$_SITE_TRIGGER_ID']
+- name: 'gcr.io/static-cloud-builders/trigger-api-broker'
+  args: ['$_SITE_TRIGGER_ID', '$_SITE_TRIGGER_PROJECT']
